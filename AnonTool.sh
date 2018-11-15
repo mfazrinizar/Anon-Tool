@@ -52,7 +52,7 @@ echo "12.> IP GeoLocation (Pelacak IP)"
 echo "[===============================================]"
 echo "13.> Xerxes (DDoS)"
 echo "[===============================================]"
-echo "14.> Ngrok"
+echo "14.> WhoIs LookUp"
 echo "[===============================================]"
 echo "15.> MD5 Cracker"
 echo "[===============================================]"
@@ -277,15 +277,9 @@ fi
 if [ $anon = 14 ] || [ $anon = 14 ]
 then
 clear
-figlet "Anon Tool (Ngrok)" | lolcat
-apt update && apt upgrade
-apt install wget
-mkdir ngrok
-cd ~/ngrok
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-mv ngrok-stable-linux-arm.zip $HOME
-$HOME/unzip ngrok-stable-linux-arm.zip
-cd ~/
+figlet "Anon Tool (WhoIs LookUp)" | lolcat
+cd anon-arsip
+python2 anonwhs.py
 fi
 
 if [ $anon = 15 ] || [ $anon = 15 ]
